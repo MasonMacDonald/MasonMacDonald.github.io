@@ -1,6 +1,19 @@
+:root {
+    --primary-light: black;
+    --secondary-light: grey;
+    --background-light: white;
+    --primary-dark: white;
+    --secondary-dark: black;
+    --background-dark: rgb(48, 48, 48);
+}
+
 *{
     top: 0;
     left: 0;
+}
+
+body{
+    background-color: var(--background-dark);
 }
 
 h1{
@@ -20,7 +33,7 @@ h1{
 }
 
 a span {
-    color: black;
+    color: var(--primary-dark);
     font-size: 32px;
     padding-top: 1rem;
     padding-bottom: 1rem;
