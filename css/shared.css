@@ -1,0 +1,35 @@
+*{
+    top: 0;
+    left: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+a span {
+    color: black;
+    font-size: 32px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#top-link {
+    padding-top: 0;
+}
+
+#bottom-link {
+    padding-bottom: 0;
+}
