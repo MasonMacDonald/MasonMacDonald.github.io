@@ -1,3 +1,9 @@
+*{
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
 :root {
     --primary-light: black;
     --secondary-light: grey;
@@ -7,36 +13,44 @@
     --background-dark: rgb(48, 48, 48);
 }
 
-*{
-    top: 0;
-    left: 0;
-}
-
 body{
     background-color: var(--background-dark);
+    overflow: hidden;
 }
 
 h1{
     text-align: center;
+    color: var(--primary-dark);
+}
+
+h2{
+    text-align: center;
+    color: var(--secondary-dark);
 }
 
 .menu{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    position: absolute;
-    padding: 0;
     list-style-type: none;
     padding: 0.5rem;
+    z-index: 999;
 }
 
-a span {
+span {
     color: var(--primary-dark);
     font-size: 32px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+a span:hover{
+    outline: 5px;
+    outline-color: black;
 }
 
 #top-link {
@@ -45,4 +59,28 @@ a span {
 
 #bottom-link {
     padding-bottom: 0;
+}
+
+.card{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10rem;
+    width: fit-content;
+    min-width: 500px;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+#home{
+    background: hotpink;
+}
+
+#games{
+    background-color: green;
+}
+
+#about{
+    background-color: blue;
 }

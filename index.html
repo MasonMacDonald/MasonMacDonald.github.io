@@ -10,13 +10,23 @@
     <title>Mason's Pages</title>
 </head>
 
-<body>
+<body onload="initializeView()">
     <ul class="menu">
         <a href="#home" id="top-link"><span class="fa-solid fa-house" id="home-link"></span></a>
         <a href="#games"><span class="fa-solid fa-gamepad" id="games-link"></span></a>
         <a href="#about" id="bottom-link"><span class="fa-solid fa-user" id="about-link"></span></a>
     </ul>
-    <h1>Welcome to Mason MacDonald's GitHub Pages</h1>
+    <div class="card" id="home">
+        <h2>Home Page</h2>
+        <p>Welcome to my webpage!</p>
+    </div>
+    <div class="card" id="games">
+        <h2>Games Page</h2>
+    </div>
+    <div class="card" id="about">
+        <h2>About Page</h2>
+    </div>
 </body>
+<script src="js/shared.js"></script>
 
 </html>
