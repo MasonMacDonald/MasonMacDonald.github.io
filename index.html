@@ -16,15 +16,41 @@
         <a href="#games"><span class="fa-solid fa-gamepad" id="games-link"></span></a>
         <a href="#about" id="bottom-link"><span class="fa-solid fa-user" id="about-link"></span></a>
     </ul>
-    <div class="card" id="home">
+    <div class="page" id="home">
         <h2>Home Page</h2>
         <p>Welcome to my webpage!</p>
     </div>
-    <div class="card" id="games">
-        <h2>Games Page</h2>
+    <div class="page" id="games">
+        <div id="console">
+            <img src="resources/Gameboy.svg" alt="handheld console">
+            <div class="game-interface"></div>
+        </div>
+        <div id="up" class="console-button"></div>
+        <div id="down" class="console-button"></div>
+        <div id="left" class="console-button"></div>
+        <div id="right" class="console-button"></div>
+        <div id="a" class="console-button"></div>
+        <div id="b" class="console-button"></div>
+        <div id="start" class="console-button"></div>
+        <div id="select" class="console-button"></div>
+        <!-- <span class="cartridge"></span> -->
     </div>
-    <div class="card" id="about">
-        <h2>About Page</h2>
+    <div class="page" id="about">
+        <h2>About Me</h2>
+        <b>Hi there! I am Mason MacDonald and the creator of this website</b>
+        <p>This is a static website made using HTML, CSS, and JavaScript. In addition to scrolling, there is a
+            navigation bar on the left side of the screen</p>
+        <!-- <p>Please find my LinkedIn profile and GitHub linked below</p> -->
+        <div class="socials-wrapper">
+            <span id="linkedin" class="socials">
+                <img src="resources/linkedin.jpeg" alt="Mason's LinkedIn profile picture" id="linkedin-pic">
+                <a href="https://www.linkedin.com/in/mason-macdonald/">Connect with me on LinkedIn</a>
+            </span>
+            <span id="github" class="socials">
+                <img src="resources/github.png" alt="Mason's GitHub profile picture" id="github-pic">
+                <a href="https://github.com/MasonMacDonald">Follow me on GitHub</a>
+            </span>
+        </div>
     </div>
 </body>
 <script src="js/shared.js"></script>

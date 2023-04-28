@@ -61,7 +61,7 @@ a span:hover{
     padding-bottom: 0;
 }
 
-.card{
+.page{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -73,14 +73,120 @@ a span:hover{
     border-radius: 0.5rem;
 }
 
+#console{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75dvh;
+    width: fit-content;
+}
+
+#game-interface{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30rem;
+    width: 30rem;
+    background-color: blueviolet; */
+    position: abosolute;
+    top: 30%;
+    left: 30%;
+    height: 10rem;
+    width: 10rem;
+    background-color: red;
+}
+
+.console-button{
+    position: absolute;
+    cursor: pointer;
+    background-color: brown;
+}
+
+#up.console-button,
+#down.console-button{
+    height: 4rem;
+    width: 4.3em;
+}
+#left.console-button,
+#right.console-button{
+    height: 4.3rem;
+    width: 4em;
+}
+
+#up.console-button{
+    top: 138%;
+    left: -1%;
+}
+
+#down.console-button{
+    top: 218%;
+    left: -1%;
+}
+
+#left.console-button{
+    top: 176%;
+    left: -13.5%;
+}
+
+#right.console-button{
+    top: 176%;
+    left: 12%;
+}
+
+#a.console-button,
+#b.console-button{
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+}
+
+#a.console-button{
+    top: 130%;
+    left: 101%;
+}
+
+#b.console-button{
+    top: 176%;
+    left: 72%;
+}
+
+
+#start.console-button,
+#select.console-button{
+    top: 303.5%;
+    height: 1.5rem;
+    width: 6.2rem;
+    border-radius: 50px;
+    rotate: -27deg;
+}
+
+#start.console-button{
+    left: 46%;
+}
+
+#select.console-button{
+    left: 19.3%;
+}
+
 #home{
     background: hotpink;
 }
 
-#games{
-    background-color: green;
+#about{
+    border: 2px solid black;
+    background-color: var(--primary-dark);
+    height: min-content;
 }
 
-#about{
-    background-color: blue;
+.socials-wrapper{
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+}
+
+.socials img{
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
 }
