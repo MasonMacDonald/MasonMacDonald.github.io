@@ -12,12 +12,15 @@
     <title>Mason's Pages</title>
 </head>
 
-<body>
+<body onload="initialize()">
+    <div class="container text-end mode-toggle-container">
+        <span class="fa-solid fa-sun mode-toggle" id="mode-toggle"></span>
+    </div>
     <div class="page" id="about">
         <h1>Mason MacDonald</h1>
         <img class="profile-picture" src="resources/profile.jpeg" alt="A headshot of Mason MacDonald">
         <p>Hi there! I am Mason MacDonald and the creator of this website.
-            I am a motivated aspiring computer engineer who is constantly looking to
+            I am a motivated, aspiring computer engineer who is constantly looking to
             expand into new technologies. I have a background of back-end development,
             specifically RESTful Api's, and have also assisted in front-end development
             and quality assurance.
@@ -29,7 +32,9 @@
         <h2>Technical Experience</h2>
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 text-start"><h3>Software Developer</h3></div>
+                <div class="col-sm-3 text-start">
+                    <h3>Software Developer</h3>
+                </div>
                 <div class="col-sm-3 text-start"><a href="https://goodly.cloud/">Goodly Cloud</a></div>
                 <div class="col-sm-6 text-end date-range">Sept 2022 - Apr 2023</div>
             </div>
@@ -44,7 +49,9 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3 text-start"><h3>Junior Software Developer</h3></div>
+                <div class="col-sm-3 text-start">
+                    <h3>Junior Software Developer</h3>
+                </div>
                 <div class="col-sm-3 text-start"><a href="https://www.piicomm.ca/">PiiComm</a></div>
                 <div class="col-sm-6 text-end date-range">Aug 2021 - Sept 2022</div>
             </div>
@@ -62,29 +69,40 @@
         <h2>Education</h2>
         <div class="container text-start">
             <div class="row">
-                <div class="col-sm-3 text-start"><h3>Algonquin College</h3></div>
-                <div class="col-sm-6"><a href="https://www.algonquincollege.com/sat/program/computer-engineering-technology-computing-science/#courses">Computer Engineering Technology - Computing Science</a></div>
+                <div class="col-sm-3 text-start">
+                    <h3>Algonquin College</h3>
+                </div>
+                <div class="col-sm-6"><a
+                        href="https://www.algonquincollege.com/sat/program/computer-engineering-technology-computing-science/#courses">Computer
+                        Engineering Technology - Computing Science</a></div>
                 <div class="col-sm-3 text-end date-range">April 2023</div>
             </div>
         </div>
         <h2>Projects</h2>
         <div class="container text-start">
             <div class="row">
-                <div class="col-sm-3"><h3>Snowflake Modeller</h3></div>
+                <div class="col-sm-3">
+                    <h3>Snowflake Modeller</h3>
+                </div>
                 <div class="col-sm-9">
                     <ul>
                         <li class="text-start">Static website using HTML, CSS, and JavaScript</li>
                         <li class="text-start">Custom JavaScript libraries to draw snowflakes using UI elements</li>
-                        <li class="text-start">Designed for a client and hosted at <a href="http://www.snowflakes.stephengagne.ca/">http://www.snowflakes.stephengagne.ca/</a></li>
+                        <li class="text-start">Designed for a client and hosted at <a
+                                href="http://www.snowflakes.stephengagne.ca/">http://www.snowflakes.stephengagne.ca/</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3"><h3>Object Recognition (Work-in-progress)</h3></div>
+                <div class="col-sm-3">
+                    <h3>Object Recognition (Work-in-progress)</h3>
+                </div>
                 <div class="col-sm-9">
                     <ul>
                         <li class="text-start">Accepts image upload to identify objects in focus</li>
-                        <li class="text-start">Leveraging <a href="https://milvus.io/">Milvus</a> to manage embedding vectors to aid in object recognition</li>
+                        <li class="text-start">Leveraging <a href="https://milvus.io/">Milvus</a> to manage embedding
+                            vectors to aid in object recognition</li>
                     </ul>
                 </div>
             </div>
@@ -109,7 +127,8 @@
                     <a href="https://www.linkedin.com/in/mason-macdonald/">Connect with me on LinkedIn</a>
                 </div>
                 <div class="col">
-                    <a href="resources/MasonMacDonald_Resume.pdf" download="MasonMacDonald_Resume.pdf">Download my resume</a>
+                    <a href="resources/MasonMacDonald_Resume.pdf" download="MasonMacDonald_Resume.pdf">Download my
+                        resume</a>
                 </div>
             </div>
         </div>
