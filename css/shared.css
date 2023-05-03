@@ -118,6 +118,7 @@ ul li,
 }
 
 .profile-picture{
+    border: 3px solid var(--primary);
     border-radius: 35%;
 }
 .col img{
@@ -137,7 +138,6 @@ ul li,
         --secondary-light: #ffffff;
         --primary-background-light: #ffffff;
         --secondary-background-light: var(--primary-background-light);
-            
         --primary: var(--primary-dark);
         --secondary: var(--secondary-dark);
         --primary-background: var(--primary-background-dark);

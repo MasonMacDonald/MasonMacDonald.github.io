@@ -16,25 +16,18 @@ let secondaryBackgroundLight = getComputedStyle(document.documentElement).getPro
 
 let isDarkMode = true
 
-// function initialize(){
-//     document.documentElement.style.setProperty('--primary-dark', primaryDark);
-//     document.documentElement.style.setProperty('--secondary-dark', secondaryDark);
-//     document.documentElement.style.setProperty('--primary-background-dark', primaryBackgroundDark);
-//     document.documentElement.style.setProperty('--secondary-background-dark', secondaryBackgroundDark);
-// }
-
 modeToggle.addEventListener("click", () => {
     if(isDarkMode){
-        document.documentElement.style.setProperty('--primary-dark', primaryLight);
-        document.documentElement.style.setProperty('--secondary-dark', secondaryLight);
-        document.documentElement.style.setProperty('--primary-background-dark', primaryBackgroundLight);
-        document.documentElement.style.setProperty('--secondary-background-dark', secondaryBackgroundLight);
+        document.documentElement.style.setProperty('--primary', primaryLight);
+        document.documentElement.style.setProperty('--secondary', secondaryLight);
+        document.documentElement.style.setProperty('--primary-background', primaryBackgroundLight);
+        document.documentElement.style.setProperty('--secondary-background', secondaryBackgroundLight);
     }
     else{
-        document.documentElement.style.setProperty('--primary-dark', primaryDark);
-        document.documentElement.style.setProperty('--secondary-dark', secondaryDark);
-        document.documentElement.style.setProperty('--primary-background-dark', primaryBackgroundDark);
-        document.documentElement.style.setProperty('--secondary-background-dark', secondaryBackgroundDark);
+        document.documentElement.style.setProperty('--primary', primaryDark);
+        document.documentElement.style.setProperty('--secondary', secondaryDark);
+        document.documentElement.style.setProperty('--primary-background', primaryBackgroundDark);
+        document.documentElement.style.setProperty('--secondary-background', secondaryBackgroundDark);
     }
     isDarkMode = !isDarkMode
 })
