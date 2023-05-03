@@ -119,7 +119,7 @@ ul li,
 .col img{
     cursor: pointer;
     min-height: 10dvh;
-    width: auto; 
+    width: 100%; 
 }
 
 @media screen and (max-width: 500px){
