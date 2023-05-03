@@ -14,6 +14,10 @@
     --primary-background-light: #ffffff;
     --secondary-background-light: #d3d3d3;
 
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --primary-background: var(--primary-background-dark);
+    --secondary-background: var(--secondary-background-dark);
 }
 
 *::-webkit-scrollbar {
@@ -40,7 +44,7 @@
 }
 
 body{
-    background-color: var(--primary-background-dark);
+    background-color: var(--primary-background);
 }
 
 .mode-toggle{
@@ -81,7 +85,7 @@ h3,
 p,
 ul li,
 .date-range{
-    color: var(--primary-dark);
+    color: var(--primary);
 }
 
 .menu{
@@ -110,7 +114,7 @@ ul li,
     padding: 1rem;
     overflow: overlay;
     border: 2px solid black;
-    background-color: var(--secondary-background-dark);
+    background-color: var(--secondary-background);
 }
 
 .profile-picture{
@@ -123,11 +127,29 @@ ul li,
 }
 
 @media screen and (max-width: 500px){
+    
+    :root {
+        --primary-dark: #000000;
+        --secondary-dark: #ffffff;
+        --primary-background-dark: #000000;
+        --secondary-background-dark: #4e4e4e;
+        --primary-light: #000000;
+        --secondary-light: #ffffff;
+        --primary-background-light: #ffffff;
+        --secondary-background-light: var(--primary-background-light);
+            
+        --primary: var(--primary-dark);
+        --secondary: var(--secondary-dark);
+        --primary-background: var(--primary-background-dark);
+        --secondary-background: var(--secondary-background-dark);
+    }
+
     .page{
         height: 100dvh;
         width: 100dvw;
         min-width: 0px;
         border: none;
         border-radius: 0;
+        background-color: var(--secondary-background);
     }
 }

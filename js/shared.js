@@ -16,12 +16,12 @@ let secondaryBackgroundLight = getComputedStyle(document.documentElement).getPro
 
 let isDarkMode = true
 
-function initialize(){
-    document.documentElement.style.setProperty('--primary-dark', primaryDark);
-    document.documentElement.style.setProperty('--secondary-dark', secondaryDark);
-    document.documentElement.style.setProperty('--primary-background-dark', primaryBackgroundDark);
-    document.documentElement.style.setProperty('--secondary-background-dark', secondaryBackgroundDark);
-}
+// function initialize(){
+//     document.documentElement.style.setProperty('--primary-dark', primaryDark);
+//     document.documentElement.style.setProperty('--secondary-dark', secondaryDark);
+//     document.documentElement.style.setProperty('--primary-background-dark', primaryBackgroundDark);
+//     document.documentElement.style.setProperty('--secondary-background-dark', secondaryBackgroundDark);
+// }
 
 modeToggle.addEventListener("click", () => {
     if(isDarkMode){
