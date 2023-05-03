@@ -58,11 +58,11 @@ body{
     z-index: 999;
 }
 
-.mode-toggle-container{
+.header-container{
     pointer-events: none;
 }
 
-.mode-toggle-container span::before{
+.header-container span::before{
     width: fit-content;
     pointer-events: auto;
 }
